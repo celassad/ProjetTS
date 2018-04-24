@@ -14,13 +14,13 @@ You need to download the ECG signals and a simple version the assistant.
 git clone ADRESSE DU GITCLONE
 ```
 
-### Files
+## Files
 
 This section described the different files and folders in this repository.
 
-## Main.m
+### Main.m
 
-## run_gui.m
+### run_gui.m
 
 ![](images/guide.png)
 
