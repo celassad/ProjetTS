@@ -46,7 +46,7 @@ You can can now load a signal by clicking on the "open" item of toolbar.
 
 This first version is a GUI implementaion of the main.m script. You can plot the temporal evolution, narrow the time window and display the ECG characteristics by ajusting the threshold and the segment.
 
-When you run the GUIDE edtor, it creates ".m" and ".fig" files located in the "src" folder. The ".m" file contains all the callback functions of the different buttons and textbox. You can open it by clicking on the editor button : ![](images/editor .png)
+When you run the GUIDE edtor, it creates ".m" and ".fig" files located in the "src" folder. The ".m" file contains all the callback functions of the different buttons and textbox. You can open it by clicking on the editor button : ![](images/editor.png)
 
 ## Authors
 * **Nolwenn TAN** (nolwenn.tan@ihu-liryc.fr)
