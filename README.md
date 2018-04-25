@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You need to download the ECG signals and a simple version the assistant. On a Linux or MacOs distribution, open a terminal and clone the git repo with the following command : 
+You need to download the ECG signals and a simple version the assistant. On a Linux or macOS distribution, open a terminal and clone the git repo with the following command : 
 
 ```
 git clone https://gitlab.com/batalinux/MICA_project.git
