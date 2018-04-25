@@ -8,23 +8,45 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You need to download the ECG signals and a simple version the assistant.
+You need to download the ECG signals and a simple version the assistant. On a Linux or MacOs distribution, open a terminal and close the git repo with the following command : 
 
 ```
-git clone ADRESSE DU GITCLONE
+git clone https://gitlab.com/batalinux/MICA_project.git
 ```
+
+On a Windows distribution, you need to download a git client (https://git-scm.com/downloads) first.
 
 ## Files
 
 This section described the different files and folders in this repository.
 
-### Main.m
+### main.m
+
+This files computes a simple analysis of an ecg signal. You can use it to test the different processing methods. 
+This first version will plot the temporal signal, compute its cardiac rythma and display the different P, Q, R, S, T points for a specific segment.  
 
 ### run_gui.m
 
+This script will launch the Matlab GUIDE tool to create a GUI interface for your assistant. You can learn how to use GUIDE on the folowing adress : 
+
+* https://fr.mathworks.com/videos/creating-a-gui-with-guide-68979.html
+
+When you run the script, you should obtain a a new window which looks like :
+
 ![](images/guide.png)
 
+This is your GUIDE editor. You can run it by doing "tools -> run" or clicking the run button. 
+It will open a new window wich is your assitant !
+
 ![](images/assistant.png)
+
+You can can now load a signal by clicking on the "open" item of toolbar. 
+
+![](images/toolbar.png)
+
+This first version is a GUI implementaion of the main.m script. You can plot the temporal evolution, narrow the time window and display the ECG characteristics by ajusting the threshold and the segment.
+
+When you run the GUIDE edtor, it creates ".m" and ".fig" files located in the "src" folder. The ".m" file contains all the callback functions of the different buttons and textbox. You can open it by clicking on the editor button : ![](images/editor .png)
 
 ## Authors
 * **Nolwenn TAN** (nolwenn.tan@ihu-liryc.fr)
