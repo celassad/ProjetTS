@@ -40,9 +40,7 @@ It will open a new window wich is your assitant !
 
 ![](images/assistant.png)
 
-You can can now load a signal by clicking on the "open" item of toolbar. 
-
-![](images/toolbar.png)
+You can can now load a signal by clicking on the "open" item of toolbar : ![](images/toolbar.png)
 
 This first version is a GUI implementaion of the main.m script. You can plot the temporal evolution, narrow the time window and display the ECG characteristics by ajusting the threshold and the segment.
 
