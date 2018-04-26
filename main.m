@@ -26,9 +26,9 @@ ylabel('Magnitude');
 title('Time evolution of the loaded signal')
 
 % Print BPM
-bpm = bpm_threshold(data, th, Fs)
+[bpm, R_locs] = bpm_threshold(data, th, Fs);
 % Figures PQRST
-[segment, P_loc, Q_loc, R_loc, S_loc, T_loc] = ecg_threshold(data, th, i_seg);
+[segment, P_loc, Q_loc, R_loc, S_loc, T_loc] = ecg_threshold(data, R_locs, i_seg);
 time_segment = (1:length(segment))/Fs;
 
 figure;

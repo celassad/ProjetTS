@@ -1,19 +1,17 @@
-function [segment, P_loc, Q_loc, R_loc, S_loc, T_loc ] = ecg_threshold( data, th, i_seg)
-[pks, loc] = findpeaks(data);
-pks(pks < th) = 0;
-loc_th = find(pks);
-new_loc = loc(loc_th);
+function [segment, P_loc, Q_loc, R_loc, S_loc, T_loc ] = ecg_threshold( data, R_locs, i_seg)
+% This function cumputes and returns the location of the P, Q, R, S and 
+% T point for the specified segment number and R values of the entire signal.
 
-inter_pks = round((new_loc(2) - new_loc(1))/2);
+inter_pks = round((R_locs(2) - R_locs(1))/2);
 if i_seg > 1
-    start_pks = new_loc(i_seg-1) + inter_pks;
+    start_pks = R_locs(i_seg-1) + inter_pks;
 else
     start_pks = 1 + inter_pks;
 end
-end_pks = new_loc(i_seg+1) - inter_pks;
+end_pks = R_locs(i_seg+1) - inter_pks;
 
 segment = data(start_pks:end_pks);
-R_loc = new_loc(i_seg)-start_pks+1;
+R_loc = R_locs(i_seg)-start_pks+1;
 [~, Q_loc] = min(segment(1:R_loc));
 [~, P_loc] = max(segment(1:Q_loc));
 [~, S_loc] = min(segment(R_loc+1:end));

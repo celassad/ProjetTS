@@ -207,11 +207,11 @@ else
 end
 try
     % Print BPM
-    bpm = bpm_threshold(handles.data, handles.th, handles.Fs);
+    [bpm, R_locs] = bpm_threshold(handles.data, handles.th, handles.Fs);
     textLabel = sprintf('%f bpm', bpm);
     set(handles.text_main, 'String', textLabel);
     % Figures PQRST
-    [segment, P_loc, Q_loc, R_loc, S_loc, T_loc ] = ecg_threshold(handles.data, handles.th, i_seg);
+    [segment, P_loc, Q_loc, R_loc, S_loc, T_loc ] = ecg_threshold(handles.data, R_locs, i_seg);
     time_segment = (1:length(segment))/handles.Fs;
     plot(time_segment, segment); grid on;
     hold on;

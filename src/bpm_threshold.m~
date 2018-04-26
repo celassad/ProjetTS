@@ -1,8 +1,7 @@
 function [bpm, R_locs] = bpm_threshold(data, th, Fs)
 % This function computes the cardiac activity in BPM by using the 
 % mean R-R distance obtained by the treshold method. It also returns the
-% location of all the R points of the entire signal.
-% SEE ALSO : ecg_threshold
+% location 
 
 [pks, loc] = findpeaks(data);
 pks(pks < th) = 0;
