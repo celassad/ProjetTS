@@ -1,6 +1,5 @@
 %% Main script to test ecg function with gui
-% author : B. Laporte-Fauret
-% last modification : 24/04/18
+% This script will launch the Matlab GUIDE tool to create a GUI interface for your assistant.
 
 clear; close all; clc;
 addpath(genpath('.'));
