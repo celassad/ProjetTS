@@ -1,5 +1,5 @@
 %% Main script to test ecg function without gui
-% This files computes a simple analysis of an ecg signal. You can use it to test the different processing methods. 
+% This file computes a simple analysis of an ecg signal. You can use it to test the different processing methods. 
 % This first version will plot the temporal signal, compute its cardiac rythma and display the different P, Q, R, S, T points for a specific segment.  
 
 clear; close all; clc;
