@@ -57,6 +57,7 @@ handles.output = hObject;
 
 % Update handles structure
 guidata(hObject, handles);
+addpath(genpath('.'));
 try
     img = imread('src/ecg.png');
     image(img);
