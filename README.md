@@ -57,6 +57,10 @@ You should obtain a new window which looks like :
 This is your GUIDE editor. You can run it by doing "tools -> run" or clicking the run button. 
 It will open a new window which is your assitant !
 
+## Your turn
+
+Follow the instructions of the subject in order to enhance this assistant with a better interface and features.
+
 ## Authors
 * **Nolwenn TAN** (nolwenn.tan@ihu-liryc.fr)
 * **Baptiste LAPORTE-FAURET** (baptiste.laporte-fauret@ims-bordeaux.fr)
